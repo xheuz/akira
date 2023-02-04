@@ -1,0 +1,82 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-family: "Lato";
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(18,30,36,1) 70%, rgba(30,47,48,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(18,30,36,1) 70%, rgba(30,47,48,1) 100%);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(18,30,36,1) 70%, rgba(30,47,48,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#1e2f30",GradientType=1);
+}
+
+input {
+    height: 60px;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    border: 2px solid #141414;
+    border-radius: 15px;
+    background-color: #000000;
+    color: #808080;
+    box-shadow: inset 0px 0px 10px #141414, 0px 0px 12px #141414;
+    outline:none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    padding: 10px;
+}
+
+ul {
+    display: inline-flex;
+    gap: 10px;
+    overflow: hidden;
+    overflow-x: auto;
+    list-style: none;
+}
+
+ul > li {
+    min-width: 200px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+ul > li > div > img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+    border-radius: 25px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #1d1d1d;
+    border-radius: 25px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #3a3a3a;
+}
