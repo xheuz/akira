@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+alembic = "*"
+beautifulsoup4 = "*"
+flask = "*"
+flask-migrate = "*"
+flask-sqlalchemy = "*"
+lxml = "*"
+selenium = "*"
+undetected-chromedriver = "*"
+webdriver-manager = "*"
+
+[dev-packages]
+black = "*"
+ipython = "*"
+flask-shell-ipython = "*"
+
+[requires]
+python_version = "3.8"

@@ -19,4 +19,7 @@ def create_app():
     # Register blueprints here
     app.register_blueprint(animes.routes)
 
+    with app.app_context():
+        db.create_all()
+
     return app

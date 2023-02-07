@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  @apply bg-slate-200
+@layer utilities {
+    /* For Webkit-based browsers (Chrome, Safari and Opera) */
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+    /* For IE, Edge and Firefox */
+    .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+
+    @media (hover) {
+        /* For Webkit-based browsers (Chrome, Safari and Opera) */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: inherit;
+        }
+        /* For IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: auto;  /* Firefox */
+        }        
+    }
 }

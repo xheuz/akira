@@ -8,8 +8,8 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = os.getenv("SECRET_KEY", "this-is-the-default-key")
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(
-        basedir, os.getenv("DATABASE_NAME")
+    SQLALCHEMY_DATABASE_URI = os.getenv(
+        "DATABASE_NAME", "sqlite:///" + os.path.join(basedir, ".database/akira.db")
     )
 
 
