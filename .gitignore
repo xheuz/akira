@@ -317,3 +317,4 @@ poetry.toml
 .cache
 .database
 .vscode
+.static

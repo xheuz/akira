@@ -5,14 +5,9 @@ name = "pypi"
 
 [packages]
 alembic = "*"
-beautifulsoup4 = "*"
 flask = "*"
 flask-migrate = "*"
 flask-sqlalchemy = "*"
-lxml = "*"
-selenium = "*"
-undetected-chromedriver = "*"
-webdriver-manager = "*"
 
 [dev-packages]
 black = "*"
